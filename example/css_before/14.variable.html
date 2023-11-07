@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom properties</title>
+    <style>
+      /* 반복적으로 사용하는 것을 css 변수로 지정함  */
+      :root {
+        --background-color: darkslategrey;
+        --text-color: whitesmoke;
+      }
+      .first-list {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        margin-left: 8px;
+      }
+      .second-list {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        margin-left: 16px;
+      }
+
+      /* 반응형으로 만들때 미디어쿼리에 따라서 달리 지정한다. */
+      @media screen and (max-width: 768px) {
+        :root {
+          --background-color: darkslateblue;
+          --text-color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="first-list">
+      <li>오렌지</li>
+      <li>사과</li>
+    </ul>
+    <ul class="second-list">
+      <li>한국</li>
+      <li>일본</li>
+      <li>중국</li>
+    </ul>
+  </body>
+</html>
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties -->

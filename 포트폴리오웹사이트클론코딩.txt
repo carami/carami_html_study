@@ -1,0 +1,158 @@
+개발환경 설정... 
+
+
+vscode   --   https://code.visualstudio.com/download  
+
+--  유용한 익스텐션  --   	- Material Theme   --  외관 적인것..  
+
+			- Material Icon Theme   --  아이콘 설정...   
+
+
+
+1. - Material Theme   설치후     set Color Theme(띰)    -- 선택  (Darker ) 
+
+2.  Material Icon Theme   
+
+3.  프리티어 (prettier)   --  formatter (설졍에서  save on formm..)  
+
+4. Live Server   
+
+5.  html to css autocomp  --  
+
+6. html css support  
+
+7. auto Rename Tag    --  시작태그 변경하면 자동으로 종료태그도 수정됨
+
+8. css Peek   -- 클래스이름에다가 마우스 가져다대면 어떤 css  적용되었는지 확인가능.. 
+
+9. intellisense for css class -- 
+
+10. ESLint  --자바스크립트  잘못된 부분 하이라이트 
+
+
+
+셋팅에서 (ctrl+,)    -- 설정값을 json으로 열기..    윗쪽 아이콘...  
+
+ "editor.tokenColorCustomizations": {
+    "comments": "#FFA7AF"
+  },
+
+//주석색깔 바꾸기!!!   원하는 색으로 바꾸면 됨.. 
+
+
+
+프로젝트 폴더 구조 팁!! 
+
+1. 프로젝트를 몽땅 관리하는 폴더를 하나 만들어두고 사용하면 좋다. 
+ex)  devel/study/project ... 
+
+2. 한글은 가급적 사용하지 않는것이 좋다. 
+3. 공백도.. 쓰지 않는 것이 좋다.
+
+
+
+--  git. github 
+
+로컬에 관리하는 것을 깃으로 관리하면 좋다..  
+
+--  깃허브 데스크탑.  
+
+--   https://desktop.github.com/    다운로드 (깃허브 데스크탑)  
+
+
+
+HTML 이란 무엇인가?? 
+
+--  웹사이트를 만들때 작성하는 문서.   웹컨텐츠의 구조와 의미를 정의함. 
+
+
+HTML 역사 
+
+HTML v1 (인콰이어 제안) -- 팀버스너리..  1991
+W3C  HTML.CSS 웹표준과 가이드 개발수행  - 199
+
+HTML5(표준안)  -- 2014      
+
+시맨틱 (div남용X  ,의미있는 블럭태그추가 header,nav,canvas...),멀티미디어요서  (ActiveX플러그인 불필요) , 불필요한 태그 제거,  기타태크추가(command, datalist,details, embed,figure... 등)
+
+
+
+ HTML의 구성요소.. 
+
+<p>Hello world</p>  --  요소.. 
+
+요소는 속성을 가질수 있다.  
+자식 요소를 가질 수 있다.
+컨텐츠가 없는 태그도 있다.
+
+
+https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes   (언어별 코드 확인가능..)  <html lang="en">
+
+
+HTML은 head(메타데이터)와 body로 나뉨.    
+
+<head>
+	<meta charset="utf-8/>
+	
+-- 웹사이트에 대한 설명...  중요함
+
+
+element  VS  container   ---  
+
+	h1_h6  address blockquote p ...    elememts   (ui를 나타내는것들)
+
+	container-  묶음
+
+
+ block  VS inline  
+
+
+
+https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+
+https://developer.mozilla.org/ko/docs/Web/HTML/Element
+
+https://html.spec.whatwg.org/
+
+
+
+CSS란 무엇인가? 
+
+웹페이지의 스타일링을 담당 
+
+선택자{
+	속성:"속성값"
+}
+
+css 특징을 제대로 이해!! 
+
+Cascading Style Sheets   
+
+우선순위가 있는 스타일을 가진 문서 
+
+두가지 이상의 스타일이 있을때 어떤 우선순위에 따라 적용할지 결정  
+
+--  우선순위가 적용된!!! 
+
+
+- h1  -- 브라우저가 이미 가지고 있지만, 
+
+사용자 >  코드 >  브라우저  
+
+
+코드상의 스타일은 구체적일수록 우선순위가 높다.  
+
+ !important (가급적사용하면 안된다.) > 인라인 >  id  >  class  > tag  
+
+ 동일한 레벨에서는 나중에 작성한 스타일이 우선순위가 높다!! 
+
+ 
+
+
+
+
+
+
+
+
+

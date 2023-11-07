@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block vs Inline vs Inline-Block</title>
+    <style>
+      p,
+      span {
+        background-color: yellow;
+      }
+      p {
+        display: inline;
+      }
+      span {
+        display: block;
+      }
+      .inlineBlock {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>기본적인 블럭 요소인 p</p>
+    <p>기본적인 블럭 요소인 p</p>
+    <span>하지만</span>
+    <span class="inlineBlock"> 스판은 아니지</span>
+  </body>
+</html>
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->

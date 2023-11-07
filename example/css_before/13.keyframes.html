@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyframes</title>
+    <style>
+      @keyframes slidein {
+        /* slidein  -- 내맘대로 지정가능 */
+        0% {
+          border-radius: 0%;
+          background-color: aquamarine;
+        }
+        50% {
+          background-color: pink;
+        }
+        100% {
+          border-radius: 100%;
+          background-color: hotpink;
+        }
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        background-color: chocolate;
+
+        animation: 3s infinite alternate slidein;
+        /* infinite -- 무한반복  
+        alternate - 끝나고 다시 처음돌아갈때 중간 거쳐돌아가기 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes -->
